@@ -2,6 +2,65 @@
 
 
 
+### step1: Create a ROS Workspace (Catkin)
+
+```mkdir catkin_ws```
+then you can go inside your new folder:
+
+```cd catkin_ws ```
+then we are going to create a source (make sure it it exactly src inside thr catkin work space)
+
+```mkdir src```
+
+![image](https://github.com/user-attachments/assets/aab89254-1c5e-42bb-8864-a55d6fb27e9f)
+
+
+now make sure that you are inside the catkin_ws folder (not inside the src folder) then we can start to compile by running the command :
+
+catkin_make
+
+
+![image](https://github.com/user-attachments/assets/8a619c9a-a412-4161-972f-f18f962a3168)
+
+
+basicaally this is gonna compile everything in the workspace, install stuff, etc...
+
+now if we run the command ls we see that we have two new folders (build and devel)
+
+if you go to the devel folder : cd devel/ then ls
+
+
+![image](https://github.com/user-attachments/assets/065e97a9-87dc-458a-8e29-13764cebf5aa)
+
+
+
+
+
+
+
+
+here we see something called (setup.bash) we will need to source this (setup.bash) script if we want to be able to use the code that we have written in our catkin workspace.
+
+so, to source this we will need to:
+
+source ~/catkin_ws/devel/setup.bash
+
+once you have run this command you can use your custom ROS code
+
+last thing here is to run gedit ~/.bashrc then this window will appears
+
+
+![image](https://github.com/user-attachments/assets/61755258-e034-49d9-96e0-b74387e2f2d6)
+
+
+
+at the end or the window we have the source line for our global ROS installation . so we will add this line source ~/catkin_ws/devel/setup.bash (after) the global ROS installation
+
+
+![image](https://github.com/user-attachments/assets/594daabf-6f7d-4da9-9fc2-33ce9e69ac6e)
+
+
+
 
 
 
@@ -72,7 +131,6 @@ when you run this command the widows will apears
 
 ```  roslaunch robot_arm_pkg check_motors.launch  ```
 
-![image](https://github.com/user-attachments/assets/3ec2247b-21a9-4b5e-b56b-695279bc12ad)
 
 
 
