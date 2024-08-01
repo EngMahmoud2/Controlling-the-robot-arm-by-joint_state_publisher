@@ -2,12 +2,15 @@
 
 
 
-### step1: Create a ROS Workspace (Catkin)
+###  Create a ROS Workspace (Catkin)
 
 ```mkdir catkin_ws```
+
 then you can go inside your new folder:
 
+
 ```cd catkin_ws ```
+
 then we are going to create a source (make sure it it exactly src inside thr catkin work space)
 
 ```mkdir src```
@@ -17,7 +20,7 @@ then we are going to create a source (make sure it it exactly src inside thr cat
 
 now make sure that you are inside the catkin_ws folder (not inside the src folder) then we can start to compile by running the command :
 
-catkin_make
+```catkin_make```
 
 
 ![image](https://github.com/user-attachments/assets/8a619c9a-a412-4161-972f-f18f962a3168)
@@ -27,7 +30,7 @@ basicaally this is gonna compile everything in the workspace, install stuff, etc
 
 now if we run the command ls we see that we have two new folders (build and devel)
 
-if you go to the devel folder : cd devel/ then ls
+if you go to the devel folder :  ```cd devel/ then ls```
 
 
 ![image](https://github.com/user-attachments/assets/065e97a9-87dc-458a-8e29-13764cebf5aa)
@@ -54,7 +57,7 @@ last thing here is to run``` gedit ~/.bashrc``` then this window will appears
 
 
 
-at the end or the window we have the source line for our global ROS installation . so we will add this line source ~/catkin_ws/devel/setup.bash (after) the global ROS installation
+at the end or the window we have the source line for our global ROS installation . so we will add this line ```source ~/catkin_ws/devel/setup.bash``` (after) the global ROS installation
 
 
 ![image](https://github.com/user-attachments/assets/594daabf-6f7d-4da9-9fc2-33ce9e69ac6e)
@@ -97,14 +100,14 @@ at the end or the window we have the source line for our global ROS installation
 
 
 
-5 run
+5- run the command
 
 ``` sudo apt-get install ros-noetic-joint-state-publisher ros-noetic-joint-state-publisher-gui ```
 
 ![image](https://github.com/user-attachments/assets/2d54ff23-14ec-4d8f-9d9d-498ce6729a36)
 
 
-6-  run
+6- run the command
 
 ``` sudo apt-get install ros-noetic-gazebo-ros-control joint-state-publisher  ```
 
@@ -113,7 +116,7 @@ at the end or the window we have the source line for our global ROS installation
 
 
 
-7- run
+7- run the command
 
 ``` sudo apt-get install ros-noetic-ros-controllers ros-noetic-ros-control  ```
 
