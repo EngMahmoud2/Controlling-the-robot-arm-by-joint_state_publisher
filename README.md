@@ -43,11 +43,11 @@ here we see something called (setup.bash) we will need to source this (setup.bas
 
 so, to source this we will need to:
 
-source ~/catkin_ws/devel/setup.bash
+```source ~/catkin_ws/devel/setup.bash```
 
 once you have run this command you can use your custom ROS code
 
-last thing here is to run gedit ~/.bashrc then this window will appears
+last thing here is to run``` gedit ~/.bashrc``` then this window will appears
 
 
 ![image](https://github.com/user-attachments/assets/61755258-e034-49d9-96e0-b74387e2f2d6)
@@ -131,6 +131,26 @@ when you run this command the widows will apears
 
 ```  roslaunch robot_arm_pkg check_motors.launch  ```
 
+![image](https://github.com/user-attachments/assets/38e24a66-d383-4ba9-994e-56cf01665f54)
+
+
+### Gazebo
+
+
+run the command :
+
+```  roslaunch robot_arm_pkg check_motors_gazebo.launch  ```
+
+
+![image](https://github.com/user-attachments/assets/e56b5881-89df-40c4-b7ac-303d1e34d1e0)
+
+
+
+### MoveIt controlling
+
+```  roslaunch moveit_pkg demo.launch  ```
+
+![image](https://github.com/user-attachments/assets/09e97638-fd7b-4426-8577-6b8c163bcb63)
 
 
 
